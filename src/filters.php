@@ -3,8 +3,8 @@
 Route::filter('logviewer.logs', function () {
     $logs = array();
 
-    foreach (Config::get('logviewer::sapi') as $sapi) {
-        $logs[$sapi]['sapi'] = Config::get('logviewer::sapi.'.$sapi, $sapi);
+    foreach (Config::get('logviewer::sapi') as $sapi => $human) {
+        $logs[$sapi]['sapi'] = $human;
         $dirs = Config::get('logviewer::log_dirs');
 
         $files = array();
