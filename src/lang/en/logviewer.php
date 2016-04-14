@@ -34,6 +34,7 @@ return array(
         'cgi-fcgi' => 'Fast CGI',
         'fpm-fcgi' => 'Nginx',
         'cli' => 'CLI',
+        'api' => 'API'
     ),
     'title' => 'Laravel 4 LogViewer',
 
