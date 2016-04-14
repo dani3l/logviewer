@@ -6,9 +6,9 @@
         <title>{{ Lang::get('logviewer::logviewer.title') }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        {{ HTML::style('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css') }}
-        {{ HTML::style('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css') }}
-        {{ HTML::style('//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css') }}
+        {{ HTML::style('//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css') }}
+        {{ HTML::style('//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css') }}
+        {{ HTML::style('//maxcdn.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css') }}
         {{ HTML::style('packages/kmd/logviewer/css/style.css') }}
 
         <link rel="shortcut icon" href="{{ URL::to('packages/kmd/logviewer/ico/favicon.png') }}">
