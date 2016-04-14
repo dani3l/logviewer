@@ -13,6 +13,12 @@ return array(
     'per_page'   => 10,
     'view'       => 'logviewer::viewer',
     'p_view'     => 'pagination::slider',
-    'sapi'       => array('apache','cgi-fcgi','fpm-fcgi','cli','api')
+    'sapi'       => array(
+        'apache' => 'Apache',
+        'cgi-fcgi' => 'Fast CGI',
+        'fpm-fcgi' => 'Nginx',
+        'cli' => 'CLI',
+        'api' => 'API'
+    )
 
 );
