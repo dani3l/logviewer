@@ -12,6 +12,7 @@ return array(
     'log_order'  => 'asc', // Change to 'desc' for the latest entries first
     'per_page'   => 10,
     'view'       => 'logviewer::viewer',
-    'p_view'     => 'pagination::slider'
+    'p_view'     => 'pagination::slider',
+    'sapi'       => array('apache','cgi-fcgi','fpm-fcgi','cli','api')
 
 );

@@ -5,8 +5,8 @@ Route::filter('logviewer.logs', function () {
     if (!Lang::has('logviewer::logviewer.sapi')) {
         App::setLocale('en');
     }
-    foreach (Lang::get('logviewer::logviewer.sapi') as $sapi => $human) {
-        $logs[$sapi]['sapi'] = $human;
+    foreach (Config::get('logviewer::sapi') as $sapi) {
+        $logs[$sapi]['sapi'] = Lang::get('logviewer::logviewer.sapi.'.$sapi);
         $dirs = Config::get('logviewer::log_dirs');
 
         $files = array();
